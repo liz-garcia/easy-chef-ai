@@ -6,7 +6,7 @@ const RecipeCreationPage = () => {
 
   return (
     <>
-      <h1>{userContext.userName ? `Nice to see you, ${userContext.userName}!` : 'Nice to see you!'}</h1>
+      <h1>{userContext.userName ? `Good to see you, ${userContext.userName}!` : 'Good to see you!'}</h1>
       <h2>Let's choose some ingredients.</h2>
     </>
   );
