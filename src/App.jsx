@@ -1,9 +1,13 @@
 import "./App.css";
+import AppRoutes from "./AppRoutes";
 
 function App() {
   return (
     <>
-      <h1>Title hey there! React App</h1>
+      <main>
+        <h1>Title hey there! React App</h1>
+        <AppRoutes />
+      </main>
     </>
   );
 }
