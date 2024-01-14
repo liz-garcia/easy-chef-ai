@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 const WelcomePage = () => {
   const [name, setName] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
-  
+
   const userContext = useContext(UserContext);
   const navigate = useNavigate();
 

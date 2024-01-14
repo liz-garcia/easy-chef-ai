@@ -3,24 +3,23 @@
 // import useOpenAIRecipe from "../hooks/useOpenAIRecipe.js";
 import { useNavigate } from "react-router-dom";
 
-
 const RecipePage = () => {
-//   const userContext = useContext(UserContext);
-// const { recipeHTML, loading, error } = useOpenAIRecipe(selectedIngredients, selectedCategories);
+  //   const userContext = useContext(UserContext);
+  // const { recipeHTML, loading, error } = useOpenAIRecipe(selectedIngredients, selectedCategories);
 
-// if (loading) {
-//   return <p>Loading...</p>;
-// }
+  // if (loading) {
+  //   return <p>Loading...</p>;
+  // }
 
-// if (error) {
-//   return <p>Error fetching products: {error.message}</p>;
-// }
+  // if (error) {
+  //   return <p>Error fetching products: {error.message}</p>;
+  // }
 
-const navigate = useNavigate();
+  const navigate = useNavigate();
 
-const handleEnterClick = () => {
-  navigate("/");
-};
+  const handleEnterClick = () => {
+    navigate("/");
+  };
 
   return (
     <>

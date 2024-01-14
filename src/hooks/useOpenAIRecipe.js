@@ -12,7 +12,7 @@ const useOpenAIRecipe = (ingredients, categories, triggerOpenAI = true) => {
   const requestRecipe = async () => {
     setLoading(true);
     try {
-      const html = await generateRecipeHTML(ingredients, categories)
+      const html = await generateRecipeHTML(ingredients, categories);
       setRecipeHTML(html);
     } catch (error) {
       setError(error);
@@ -25,7 +25,7 @@ const useOpenAIRecipe = (ingredients, categories, triggerOpenAI = true) => {
     if (triggerOpenAI) {
       requestRecipe();
     }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [triggerOpenAI]);
 
   return { recipeHTML, loading, error, requestRecipe };
