@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 const WelcomePage = () => {
   const [name, setName] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
+  
   const userContext = useContext(UserContext);
   const navigate = useNavigate();
 
@@ -35,7 +36,7 @@ const WelcomePage = () => {
         value={name}
         onChange={handleNameChange}
       />
-      <button onClick={handleEnterClick}>Enter</button>
+      <button onClick={handleEnterClick}>Start</button>
       {/* Conditionally render error message */}
       {errorMessage && <p>{errorMessage}</p>}
     </>
