@@ -7,12 +7,12 @@ import PropTypes from "prop-types";
 const RecipeContext = createContext();
 
 const RecipeContextProvider = ({ children }) => {
-  const [ingredients, setIngredients] = useState([]);
-  const [categories, setCategories] = useState([]);
+  const [recipeIngredients, setRecipeIngredients] = useState([]);
+  const [recipeCategories, setRecipeCategories] = useState([]);
 
   return (
     <RecipeContext.Provider
-      value={{ ingredients, categories, setIngredients, setCategories }}
+      value={{ recipeIngredients, recipeCategories, setRecipeIngredients, setRecipeCategories }}
     >
       {children}
     </RecipeContext.Provider>
