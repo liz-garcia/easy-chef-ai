@@ -1,4 +1,5 @@
 import "../styles/RecipePage.css";
+import HtmlReactParser from 'html-react-parser';
 
 import { useContext } from "react";
 import { RecipeContext } from "../context/RecipeContext.jsx";
@@ -36,8 +37,8 @@ const RecipePage = () => {
     <>
       <h1>Creating new recipe...</h1>
       <h2>Some text area</h2>
-      {/* Render the HTML using dangerouslySetInnerHTML */}
-      <div dangerouslySetInnerHTML={{ __html: strippedHTMLRecipe }} />
+      {/* Render the HTML using ReactHtmlParser */}
+      {HtmlReactParser(strippedHTMLRecipe)}
       <div>{strippedHTMLRecipe}</div>
       <p>{recipe.imageURL}</p>
       <p>{recipe.title}</p>

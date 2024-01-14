@@ -3,7 +3,7 @@ import generateRecipePrompt from "./generateRecipePrompt.js";
 
 // Usually this API key would be stored in a .env file
 // But for project presentation purposes, it has been included here
-const openAiApiKey = "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";
+const openAiApiKey = "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";
 const openAi = new OpenAI({
   apiKey: openAiApiKey,
   dangerouslyAllowBrowser: true,
@@ -35,7 +35,7 @@ async function generateRecipeHTML(ingredients, categories) {
 // based on the titleText which is obtained by
 async function generateRecipeImageURL(recipeTitleString) {
   try {
-    const prompt = `Delicious dish: ${recipeTitleString}, served on a table at home with pleasant lighting and pretty decoration.`;
+    const prompt = `Forefront photography of delicious dish: ${recipeTitleString}, served on a table at home with pleasant lighting and pretty decoration.`;
 
     const image = await openAi.images.generate({
       model: "dall-e-3",
