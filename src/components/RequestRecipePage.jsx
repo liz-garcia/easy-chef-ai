@@ -42,14 +42,6 @@ const RequestRecipePage = () => {
   const handleEnterClick = () => {
     recipeContext.setRecipeIngredients(ingredients);
     recipeContext.setRecipeCategories(categories);
-    console.log(
-      recipeContext.recipeIngredients,
-      recipeContext.recipeCategories,
-    );
-    console.log(
-      recipeContext.recipeIngredients,
-      recipeContext.recipeCategories,
-    );
     navigate("/recipe");
   };
 

@@ -1,20 +1,24 @@
 import OpenAI from "openai";
-import generatePrompt from "./generateAPIPrompt.js";
+import generateRecipePrompt from "./generateRecipePrompt.js";
 
-const openAiApiKey = "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";
+// Usually this API key would be stored in a .env file
+// But for project presentation purposes, it has been included here
+const openAiApiKey = "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";
 const openAi = new OpenAI({
   apiKey: openAiApiKey,
   dangerouslyAllowBrowser: true,
 });
 
-// Returns a generated recipe formatted in HTML
-// as specified in generatePrompt.js
+// Returns a recipe formatted in HTML
+// as specified in the file generateRecipePrompt.js
+// which provides an HTML template to be filled in
+// with data generated through OpenAI API.
 async function generateRecipeHTML(ingredients, categories) {
   try {
-    const recipePrompt = generatePrompt(ingredients, categories);
+    const prompt = generateRecipePrompt(ingredients, categories);
 
     const completion = await openAi.chat.completions.create({
-      messages: [{ role: "system", content: recipePrompt }],
+      messages: [{ role: "system", content: prompt }],
       model: "gpt-3.5-turbo",
     });
 
@@ -28,13 +32,14 @@ async function generateRecipeHTML(ingredients, categories) {
 }
 
 // Returns the URL for a generated image
-async function generateRecipeImageURL(title) {
+// based on the titleText which is obtained by
+async function generateRecipeImageURL(recipeTitleString) {
   try {
-    const recipeImagePrompt = `Delicious dish: ${title}, served on a table at home with pleasant lighting and pretty decoration.`;
+    const prompt = `Delicious dish: ${recipeTitleString}, served on a table at home with pleasant lighting and pretty decoration.`;
 
     const image = await openAi.images.generate({
       model: "dall-e-3",
-      prompt: `${recipeImagePrompt}`,
+      prompt: `${prompt}`,
     });
 
     const recipeImageURL = image.data[0].url;

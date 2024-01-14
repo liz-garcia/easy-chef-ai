@@ -1,0 +1,17 @@
+/* body{
+    color: pink;
+}
+
+h1 {
+    color: cyan;
+} */
+
+#recipe .recipe-image {
+    border: solid green 10px;;
+    width: 300px;
+}
+
+.recipe-image img {
+    width: 100%;
+    object-fit: cover;
+}
