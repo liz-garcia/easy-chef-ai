@@ -28,17 +28,22 @@ const WelcomePage = () => {
 
   return (
     <>
-      <h1>Welcome{name && " " + name}!</h1>
-      <label htmlFor="nameInput">Please enter your name:</label>
-      <input
-        type="text"
-        id="nameInput"
-        value={name}
-        onChange={handleNameChange}
-      />
-      <button onClick={handleEnterClick}>Start</button>
-      {/* Conditionally render error message */}
-      {errorMessage && <p>{errorMessage}</p>}
+      <div id="welcome-image">
+        <img alt="Welcoming AI Chef in the kitchen." src="./src/assets/welcome-page.png"/>
+      </div>
+      <div id="welcome-text">
+        <h1>Welcome{name && " " + name}!</h1>
+        <label htmlFor="nameInput">Need ideas for what to cook today? Let your AI chef help you!</label>
+        <input
+          type="text"
+          id="nameInput"
+          value={name}
+          onChange={handleNameChange} placeholder="Please enter your name:"
+        />
+        <button className="text-button" onClick={handleEnterClick}>Start</button>
+        {/* Conditionally render error message */}
+        {errorMessage && <p>{errorMessage}</p>}
+      </div>
     </>
   );
 };
