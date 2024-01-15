@@ -13,7 +13,9 @@ const ThemeContextProvider = ({ children }) => {
   useEffect(() => {
     // Function to update the theme based on system color scheme
     const updateTheme = () => {
-      const prefersDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const prefersDarkMode =
+        window.matchMedia &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches;
       setIsDarkMode(prefersDarkMode);
     };
 
@@ -21,16 +23,16 @@ const ThemeContextProvider = ({ children }) => {
     updateTheme();
 
     // Listen for changes in system color scheme
-    const mediaQueryList = window.matchMedia('(prefers-color-scheme: dark)');
+    const mediaQueryList = window.matchMedia("(prefers-color-scheme: dark)");
     const handleChange = () => {
       updateTheme();
     };
 
-    mediaQueryList.addEventListener('change', handleChange);
+    mediaQueryList.addEventListener("change", handleChange);
 
     // Clean up the event listener on component unmount
     return () => {
-      mediaQueryList.removeEventListener('change', handleChange);
+      mediaQueryList.removeEventListener("change", handleChange);
     };
   }, []);
 

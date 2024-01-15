@@ -10,11 +10,7 @@ const ToggleThemeButton = () => {
     themeContext.toggleTheme(); // Add a toggleTheme function to your context
   };
 
-  return (
-    <button onClick={handleToggle}>
-      Toggle Theme
-    </button>
-  );
+  return <button id="toggleThemeButton" onClick={handleToggle}></button>;
 };
 
 export default ToggleThemeButton;

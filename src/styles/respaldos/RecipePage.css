@@ -7,11 +7,11 @@ h1 {
 } */
 
 #recipe .recipe-image {
-    border: solid green 10px;;
-    width: 300px;
+  border: solid green 10px;
+  width: 300px;
 }
 
 .recipe-image img {
-    width: 100%;
-    object-fit: cover;
+  width: 100%;
+  object-fit: cover;
 }
