@@ -1,9 +1,12 @@
-.light-theme {
+:root {
+  .light-theme {
     color: darkgray;
     background-color: white;
 
     /* h1 {
         font-size: 5rem;
     } */
-
 }
+}
+
+
