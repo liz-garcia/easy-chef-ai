@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import WelcomePage from "./components/WelcomePage.jsx";
-import RequestRecipePage from "./components/RequestRecipePage.jsx";
-import RecipePage from "./components/RecipePage.jsx";
+import WelcomePage from "./pages/WelcomePage.jsx";
+import RequestRecipePage from "./pages/RequestRecipePage.jsx";
+import RecipePage from "./pages/RecipePage.jsx";
 
 const AppRoutes = () => {
   return (

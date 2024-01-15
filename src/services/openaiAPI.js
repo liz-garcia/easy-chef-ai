@@ -1,12 +1,15 @@
-import OpenAI from 'openai';
-import generateRecipePrompt from './generateRecipePrompt.js';
+import OpenAI from "openai";
+import generateRecipePrompt from "./generateRecipePrompt.js";
 
 // Access the OpenAI API key
 // const openAiApiKey = process.env.OPEN_AI_API_KEY;
 // eslint-disable-next-line no-undef
 const openAiApiKey = import.meta.env.VITE_OPEN_AI_API_KEY;
 
-const openAi = new OpenAI({ apiKey: openAiApiKey, dangerouslyAllowBrowser: true});
+const openAi = new OpenAI({
+  apiKey: openAiApiKey,
+  dangerouslyAllowBrowser: true,
+});
 
 // Returns a recipe formatted in HTML
 // as specified in the file generateRecipePrompt.js

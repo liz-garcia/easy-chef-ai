@@ -1,10 +1,7 @@
-import "../styles/RecipePage.css";
-import HtmlReactParser from 'html-react-parser';
-
+import HtmlReactParser from "html-react-parser";
 import { useContext } from "react";
 import { RecipeContext } from "../context/RecipeContext.jsx";
 import { useNavigate } from "react-router-dom";
-
 import useOpenAIRecipe from "../hooks/useOpenAIRecipe.js";
 
 const RecipePage = () => {
