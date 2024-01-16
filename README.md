@@ -34,6 +34,8 @@ To set up the project, follow these steps:
 
 ## Project structure
 
+```
+EasyChefAI
 .
 ├── README.md
 ├── index.html
@@ -52,6 +54,7 @@ To set up the project, follow these steps:
 │   ├── services
 │   └── styles
 └── vite.config.js
+```
 
 - **src:** Contains the main source code.
 - **components:** Reusable UI components.
