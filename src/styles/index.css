@@ -46,8 +46,8 @@ main {
   width: 2em;
   height: 2em;
   border: none;
-  background: url('../assets/toggle-mode-button.png') no-repeat;
-  background-size: contain;
+  /* background: url('../assets/toggle-mode-button.png') no-repeat;
+  background-size: contain; */
 }
 
 #welcome-text {

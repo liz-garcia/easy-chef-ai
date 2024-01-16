@@ -3,7 +3,8 @@
   color: darkgray;
   background-color: rgb(255, 255, 255);
 
-  /* h1 {
-            font-size: 5rem;
-        } */
+  #toggleThemeButton {
+    background: url('../assets/toggle-mode-button.png') no-repeat;
+    background-size: contain;
+  }
 }
