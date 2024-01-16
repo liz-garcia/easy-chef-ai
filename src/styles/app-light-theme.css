@@ -37,4 +37,12 @@
   .requestRecipePageMain h2 {
     color: #4498f4;
   }
+
+  .recipePageMain h1 {
+    color: orange;
+  }
+
+  .recipePageMain h2 {
+    color: #4498f4;
+  }
 }

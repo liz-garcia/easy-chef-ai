@@ -1,0 +1,30 @@
+.recipePageMain {
+    display: grid;
+    place-items: center;
+    /* border: solid red 2px; */
+    height: 100vh;
+    min-height: fit-content;
+  }
+
+  .recipePageMain h1 {
+    /* border: blue solid 2px; */
+    margin: 0px;
+  }
+  
+  .recipePageMain h2 {
+    /* border: green solid 2px; */
+    margin: 0.5em;
+    line-height: 1.15;
+  }
+
+  .recipePageMain ul {
+    /* border: red solid 5px; */
+    list-style-type: none;
+    /* padding: 0;
+    margin: 0; */
+    /* display: flex; */
+    /* place-content: center;
+    flex-direction: row;
+    padding-left: 1.5em; */
+    width: fit-content;
+  }

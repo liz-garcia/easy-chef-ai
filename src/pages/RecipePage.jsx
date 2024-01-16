@@ -1,5 +1,6 @@
+import "../styles/pages/RecipePage.css";
 import HtmlReactParser from "html-react-parser";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { RecipeContext } from "../context/RecipeContext.jsx";
 import { useNavigate } from "react-router-dom";
 import useOpenAIRecipe from "../hooks/useOpenAIRecipe.js";
@@ -10,7 +11,23 @@ const RecipePage = () => {
     recipeIngredients,
     recipeCategories,
   );
+
   const navigate = useNavigate();
+
+  useEffect(() => {
+    const mainElement = document.querySelector("main");
+
+    if (mainElement) {
+      mainElement.className = "recipePageMain";
+    }
+
+    // Cleanup function (if needed)
+    return () => {
+      if (mainElement) {
+        mainElement.className = ""; // Remove the class on component unmount
+      }
+    };
+  }, []);
 
   // Remove <html> and <body> tags
   const recipeHTML = recipe.html;
@@ -32,14 +49,9 @@ const RecipePage = () => {
 
   return (
     <>
-      <h1>Creating new recipe...</h1>
-      <h2>Some text area</h2>
       {/* Render the HTML using ReactHtmlParser */}
       {HtmlReactParser(strippedHTMLRecipe)}
-      <div>{strippedHTMLRecipe}</div>
-      <p>{recipe.imageURL}</p>
-      <p>{recipe.title}</p>
-      <button onClick={handleEnterClick}>Restart</button>
+      <button className="text-button" onClick={handleEnterClick}>Restart!</button>
     </>
   );
 };
