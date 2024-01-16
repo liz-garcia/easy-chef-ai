@@ -3,7 +3,7 @@ font-family: 'Inter', sans-serif; */
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(-10px);
+    transform: translateY(10px);
   }
   to {
     opacity: 1;
@@ -63,7 +63,7 @@ main {
 }
 
 #welcome-text {
-  animation: fadeIn 5s ease-in-out;
+  animation: fadeIn 2s ease-in-out;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -74,21 +74,22 @@ main {
 
 #welcome-text h1 {
   font-size: 1.75em;
-  margin-bottom: 0.1em;
+  margin-bottom: 0.05em;
 }
 
 #welcome-text #logo {
   /* border: 5px green solid; */
+  animation: fadeIn 1.5s ease-in-out;
   flex: 2;
   margin: 1em;
   width: 100%;
-  max-width: 330px;
+  max-width: 290px;
   height: 100%;
 }
 
 #welcome-text #logo img {
   /* border: 2px solid orange; */
-  animation: fadeIn 1.5s ease-in-out;
+  /* animation: fadeIn 1.5s ease-in-out; */
   object-fit: contain;
   width: 100%;
   height: 100%;
@@ -106,12 +107,14 @@ label {
 
 input {
   margin: 0.5em;
-  padding: 0.5em;
+  padding: 0.7em;
+  font-family: Inter, sans-serif;
   font-size: 0.95em;
   width: 15em;
   text-align: center;
+  border: none;
   border-radius: 0.5em;
-  border: 1px lightgray solid;
+  box-shadow: 2px 4.5px 5px 0.5px rgba(4, 6, 12, 0.15);
 }
 
 .text-button {
@@ -148,6 +151,9 @@ input {
 
 /* Media query for small screens */
 @media (max-width: 655px) {
+  :root {
+    font-size: 17px;
+  }
 
   main {
     flex-direction: column;
