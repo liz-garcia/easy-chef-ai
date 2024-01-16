@@ -1,9 +1,7 @@
-// import "./styles/app-light-theme.css";
-// import "./styles/app-dark-theme.css";
+import { ThemeContext } from "./context/ThemeContext.jsx";
 import { useContext, useEffect } from "react";
 import AppRoutes from "./AppRoutes";
 import ToggleThemeButton from "./components/ToggleThemeButton.jsx";
-import { ThemeContext } from "./context/ThemeContext.jsx";
 
 function App() {
   const themeContext = useContext(ThemeContext);

@@ -1,7 +1,5 @@
-// import "./styles/index.css";
-import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
-
+import ReactDOM from "react-dom/client";
 import { ThemeContextProvider } from "./context/ThemeContext.jsx";
 import { UserContextProvider } from "./context/UserContext.jsx";
 import { RecipeContextProvider } from "./context/RecipeContext.jsx";
