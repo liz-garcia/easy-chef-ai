@@ -38,4 +38,8 @@
   .recipePageMain h1 {
     color: #4498f4;
   }
+
+  .recipe .recipe-text .message p {
+    color: orange;
+  }
 }

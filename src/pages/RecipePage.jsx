@@ -51,7 +51,7 @@ const RecipePage = () => {
     <>
       {/* Render the HTML using ReactHtmlParser */}
       {HtmlReactParser(strippedHTMLRecipe)}
-      <button className="text-button" onClick={handleEnterClick}>Restart!</button>
+      <button id="restartButton" className="text-button" onClick={handleEnterClick}>Restart!</button>
     </>
   );
 };

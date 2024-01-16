@@ -2,6 +2,8 @@
 const generateRecipePrompt = (ingredients, categories) => {
   const recipePrompt = `
     Please provide a 5-steps recipe using these ingredients: ${ingredients} and categories: ${categories}.
+
+    Title in the h1 element should be fun, expressive and descriptive. Also, include at the beginning of the title an emoji accordingly to the recipe presented.
     
     Finish the recipe with a kind, short and sweet message about:
     having a nice home-made meal or saying something like "Enjoy your meal!"
@@ -12,31 +14,33 @@ const generateRecipePrompt = (ingredients, categories) => {
         <div className="recipe-image">
             <img alt="" src=""/>
         </div>
-        <h1 className="recipe-title">title here</h1>
-        <ul className="recipe-steps">
-            <li className="recipe-step">
-                <h2>Step 1</h2>
-                <p>step description</p>
-            </li>
-            <li className="recipe-step">
-                <h2>Step 2</h2>
-                <p>step description</p>
-            </li>
-            <li className="recipe-step">
-                <h2>Step 3</h2>
-                <p>step description</p>
-            </li>
-            <li className="recipe-step">
-                <h2>Step 4</h2>
-                <p>step description</p>
-            </li>
-            <li className="recipe-step">
-                <h2>Step 5</h2>
-                <p>step description</p>
-            </li>
-        </ul>
-        <div className="message">
-            <p>Kind message at the end</p>
+        <div className="recipe-text">
+            <h1 className="recipe-title">title here</h1>
+            <ul className="recipe-steps">
+                <li className="recipe-step">
+                    <h2>Step 1</h2>
+                    <p>step description</p>
+                </li>
+                <li className="recipe-step">
+                    <h2>Step 2</h2>
+                    <p>step description</p>
+                </li>
+                <li className="recipe-step">
+                    <h2>Step 3</h2>
+                    <p>step description</p>
+                </li>
+                <li className="recipe-step">
+                    <h2>Step 4</h2>
+                    <p>step description</p>
+                </li>
+                <li className="recipe-step">
+                    <h2>Step 5</h2>
+                    <p>step description</p>
+                </li>
+            </ul>
+            <div className="message">
+                <p>Kind message at the end</p>
+            </div>
         </div>
     </div>
 
