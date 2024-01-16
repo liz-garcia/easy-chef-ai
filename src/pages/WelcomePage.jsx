@@ -35,22 +35,30 @@ const WelcomePage = () => {
         </div>
       </div> */}
       <div id="welcome-image">
-        <img alt="Welcoming AI Chef in the kitchen." src="/welcome-page-image.png"/>
+        <img
+          alt="Welcoming AI Chef in the kitchen."
+          src="/welcome-page-image.png"
+        />
       </div>
       <div id="welcome-text">
         <div id="logo">
-          <img alt="Easy AI Chef Logo" src="/easyChefAI-logo.png"/>
+          <img alt="Easy AI Chef Logo" src="/easyChefAI-logo.png" />
         </div>
         <h1>Welcome{name && " " + name}!</h1>
-        <label htmlFor="nameInput">Need ideas for what to cook today?<br></br>Let your AI chef help you!</label>
+        <label htmlFor="nameInput">
+          Need ideas for what to cook today?<br></br>Let your AI chef help you!
+        </label>
         <div className="input-area">
           <input
             type="text"
             id="nameInput"
             value={name}
-            onChange={handleNameChange} placeholder="Please enter your name"
+            onChange={handleNameChange}
+            placeholder="Please enter your name"
           />
-          <button className="text-button" onClick={handleEnterClick}>Start</button>
+          <button className="text-button" onClick={handleEnterClick}>
+            Start
+          </button>
         </div>
         {/* Conditionally render error message */}
         {errorMessage && <p className="error-message">{errorMessage}</p>}

@@ -1,128 +1,128 @@
 #welcome-text {
-    animation: fadeIn 2s ease-in-out;
-    flex: 1;
-    display: flex;
+  animation: fadeIn 2s ease-in-out;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 3em;
+  place-items: center;
+  /* border: 5px green solid; */
+}
+
+#welcome-text h1 {
+  font-size: 1.75em;
+  margin-bottom: 0.05em;
+}
+
+#welcome-text #logo {
+  /* border: 5px green solid; */
+  animation: fadeIn 1.5s ease-in-out;
+  flex: 2;
+  margin: 1em;
+  width: 100%;
+  max-width: 290px;
+  height: 100%;
+}
+
+#welcome-text #logo img {
+  /* border: 2px solid orange; */
+  /* animation: fadeIn 1.5s ease-in-out; */
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+#welcome-text .error-message {
+  font-size: 0.75em;
+  animation: fadeIn 1.5s ease-out; /* Adjust the duration and timing function as needed */
+}
+
+#welcome-image {
+  /* border: 5px green solid; */
+  animation: fadeIn 1.5s ease-in-out;
+  flex: 2;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+#welcome-image img {
+  /* border: 2px solid orange; */
+  object-fit: cover;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* Media query for medium-sized screens */
+/* @media (max-width: 768px) {
+  } */
+
+/* Media query for small screens */
+@media (max-width: 655px) {
+  :root {
+    font-size: 17px;
+  }
+
+  main {
     flex-direction: column;
-    padding: 3em;
-    place-items: center;
-    /* border: 5px green solid; */
   }
-  
+
+  #welcome-image {
+    /* flex: 1; */
+    width: 100%;
+    height: 50vh;
+  }
+
+  #welcome-text {
+    /* border: blue solid 5px; */
+    height: 50vh;
+    padding-top: 0em;
+    padding-bottom: 1.5em;
+    /* flex: 1; */
+  }
+
   #welcome-text h1 {
-    font-size: 1.75em;
-    margin-bottom: 0.05em;
+    margin-top: 0.25em;
   }
-  
+
   #welcome-text #logo {
     /* border: 5px green solid; */
-    animation: fadeIn 1.5s ease-in-out;
-    flex: 2;
-    margin: 1em;
-    width: 100%;
-    max-width: 290px;
-    height: 100%;
+    /* flex: 2; */
+    margin-top: 0.15em;
+    margin-bottom: 0em;
+    /* width: 100%; */
+    max-width: 300px;
+    /* height: 100%; */
   }
-  
+
   #welcome-text #logo img {
     /* border: 2px solid orange; */
-    /* animation: fadeIn 1.5s ease-in-out; */
     object-fit: contain;
     width: 100%;
     height: 100%;
   }
-  
-  #welcome-text .error-message {
-    font-size: 0.75em;
-    animation: fadeIn 1.5s ease-out; /* Adjust the duration and timing function as needed */
+
+  #welcome-text label {
+    font-size: 0.95em;
+    /* margin: 0.15em; */
+    margin-bottom: 0.25em;
   }
-  
-  #welcome-image {
-    /* border: 5px green solid; */
-    animation: fadeIn 1.5s ease-in-out;
-    flex: 2;
+
+  #welcome-text .input-area {
     display: flex;
-    width: 100%;
-    height: 100%;
+    /* min-width: 325px; */
   }
-  
-  #welcome-image img {
-    /* border: 2px solid orange; */
-    object-fit: cover;
-    place-items: center;
-    width: 100%;
-    height: 100%;
+
+  #welcome-text .input-area .text-button {
+    margin: 0.25em;
   }
-  
-  /* Media query for medium-sized screens */
-  /* @media (max-width: 768px) {
-  } */
-  
-  /* Media query for small screens */
-  @media (max-width: 655px) {
-    :root {
-      font-size: 17px;
-    }
-  
-    main {
-      flex-direction: column;
-    }
-  
-    #welcome-image {
-      /* flex: 1; */
-      width: 100%;
-      height: 50vh;
-    }
-  
-    #welcome-text {
-      /* border: blue solid 5px; */
-      height: 50vh;
-      padding-top: 0em;
-      padding-bottom: 1.5em;
-      /* flex: 1; */
-    }
-  
-    #welcome-text h1 {
-      margin-top: 0.25em;
-    }
-  
-    #welcome-text #logo {
-      /* border: 5px green solid; */
-      /* flex: 2; */
-      margin-top: 0.15em;
-      margin-bottom: 0em;
-      /* width: 100%; */
-      max-width: 300px;
-      /* height: 100%; */
-    }
-    
-    #welcome-text #logo img {
-      /* border: 2px solid orange; */
-      object-fit: contain;
-      width: 100%;
-      height: 100%;
-    }
-  
-    #welcome-text label {
-      font-size: 0.95em;
-      /* margin: 0.15em; */
-      margin-bottom: 0.25em;
-    }
-  
-    #welcome-text .input-area {
-      display: flex;
-      /* min-width: 325px; */
-    }
-  
-    #welcome-text .input-area .text-button {
-      margin: 0.25em;
-    }
-  
-    #welcome-text .input-area input {
-      max-width: 225px;
-      margin: 0.25em;
-    }
-    
-    /* input {
+
+  #welcome-text .input-area input {
+    max-width: 225px;
+    margin: 0.25em;
+  }
+
+  /* input {
       margin: 0.5em;
       padding: 0.5em;
       font-size: 0.95em;
@@ -131,4 +131,4 @@
       border-radius: 0.5em;
       border: 1px lightgray solid;
     } */
-  }
+}

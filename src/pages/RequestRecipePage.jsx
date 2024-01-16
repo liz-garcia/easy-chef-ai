@@ -21,12 +21,12 @@ const RequestRecipePage = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    const mainElement = document.querySelector('main');
-  
+    const mainElement = document.querySelector("main");
+
     if (mainElement) {
       mainElement.className = "requestRecipePageMain";
     }
-  
+
     // Cleanup function (if needed)
     return () => {
       if (mainElement) {
@@ -63,62 +63,72 @@ const RequestRecipePage = () => {
 
   return (
     <>
-    <div id="requestRecipePage">
-      <h1>
-        {userContext.userName
-          ? `Good to see you, ${userContext.userName}!`
-          : "Good to see you!"}
-      </h1>
-      <h2>I am your smart friend. Let&apos;s make a new recipe.</h2>
+      <div id="requestRecipePage">
+        <h1>
+          {userContext.userName
+            ? `Good to see you, ${userContext.userName}!`
+            : "Good to see you!"}
+        </h1>
+        <h2>I am your smart friend. Let&apos;s make a new recipe.</h2>
 
-      {/* Ingredients input and list */}
-      <div id="ingredientsInputSection">
-        <label htmlFor="ingredients">What ingredients are we using today?</label>
-        <div>
-          <input
-            type="text"
-            id="ingredients"
-            value={ingredientInput}
-            onChange={handleIngredientsChange}
-          />
-          <button className="text-button" id="addIngredient" onClick={handleAddIngredient}>
-            Add Ingredient
-          </button>
-          <div className="recipeInput">
-            <ul>
-              {ingredients.map((ingredient, index) => (
-                <li key={index}>{ingredient}</li>
-              ))}
-            </ul>
+        {/* Ingredients input and list */}
+        <div id="ingredientsInputSection">
+          <label htmlFor="ingredients">
+            What ingredients are we using today?
+          </label>
+          <div>
+            <input
+              type="text"
+              id="ingredients"
+              value={ingredientInput}
+              onChange={handleIngredientsChange}
+            />
+            <button
+              className="text-button"
+              id="addIngredient"
+              onClick={handleAddIngredient}
+            >
+              Add Ingredient
+            </button>
+            <div className="recipeInput">
+              <ul>
+                {ingredients.map((ingredient, index) => (
+                  <li key={index}>{ingredient}</li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
 
-      {/* Categories input and list */}
-      <div id="categoriesInputSection">
-        <label htmlFor="categories">What categories do you want?</label>
-        <div>
-          <input
-            type="text"
-            id="categories"
-            value={categoryInput}
-            onChange={handleCategoriesChange}
-          />
-          <button className="text-button" id="addCategory" onClick={handleAddCategory}>
-            Add Category
-          </button>
-          <div className="recipeInput">
-            <ul>
-              {categories.map((category, index) => (
-                <li key={index}>{category}</li>
-              ))}
-            </ul>
+        {/* Categories input and list */}
+        <div id="categoriesInputSection">
+          <label htmlFor="categories">What categories do you want?</label>
+          <div>
+            <input
+              type="text"
+              id="categories"
+              value={categoryInput}
+              onChange={handleCategoriesChange}
+            />
+            <button
+              className="text-button"
+              id="addCategory"
+              onClick={handleAddCategory}
+            >
+              Add Category
+            </button>
+            <div className="recipeInput">
+              <ul>
+                {categories.map((category, index) => (
+                  <li key={index}>{category}</li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
 
-      <button onClick={handleEnterClick}>Enter</button>
-    </div>
+        <button onClick={handleEnterClick}>Enter</button>
+      </div>
     </>
   );
 };

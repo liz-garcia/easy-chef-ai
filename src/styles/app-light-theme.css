@@ -4,7 +4,7 @@
   background-color: rgb(255, 255, 255);
 
   #toggleThemeButton {
-    background: url('../assets/toggle-mode-button.png') no-repeat;
+    background: url("../assets/toggle-mode-button.png") no-repeat;
     background-size: contain;
   }
 
@@ -13,7 +13,7 @@
   }
 
   #welcome-text h1 {
-    color: #4498F4;
+    color: #4498f4;
   }
 
   #welcome-text .input-area input {
@@ -21,11 +21,11 @@
   }
 
   input {
-    color: #4498F4;
-    background: #FFF;
+    color: #4498f4;
+    background: #fff;
   }
 
   input::placeholder {
-    color: #4498F4;
+    color: #4498f4;
   }
 }

@@ -7,7 +7,7 @@
     height: 100%;
 } */
 body {
-    border: blue solid 2px;
+  border: blue solid 2px;
 }
 
 /* main {
@@ -17,53 +17,53 @@ body {
 } */
 
 .requestRecipePageMain {
-    display: grid;
-    place-items: center;
-    border: solid red 2px;
-    height: 100vh;
+  display: grid;
+  place-items: center;
+  border: solid red 2px;
+  height: 100vh;
 }
-  
-  /* Your div inside main */
-  /* main div {
+
+/* Your div inside main */
+/* main div {
   } */
 
 #ingredientsInputSection {
-    margin-bottom: 1.5em;
+  margin-bottom: 1.5em;
 }
 
 #categoriesInputSection {
-    margin-bottom: 1em;
+  margin-bottom: 1em;
 }
 
-  .recipeInput {
-    border: green solid 1px;
-    /* width: 200px; */
-    /* margin-left: 50px; */
-    padding-top: 0.5em;
-    display: flex;
-    place-content: center;
-  }
+.recipeInput {
+  border: green solid 1px;
+  /* width: 200px; */
+  /* margin-left: 50px; */
+  padding-top: 0.5em;
+  display: flex;
+  place-content: center;
+}
 
-  #requestRecipePage ul {
-    border: orange solid 1px;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    place-content: center;
-    flex-direction: column;
-    padding-left: 1.5em;
-    width: fit-content;
-  }
-  
-  #requestRecipePage li {
-    border: blue solid 1px;
-    list-style-image: url('/public/check.png');
-    margin-left: 0.5em;
-    max-width: fit-content;
-    margin-bottom: 5px;
-    vertical-align: middle;
-    /* padding-bottom: 20px; */
-    margin: 0;
-    padding: 0;
-  }
+#requestRecipePage ul {
+  border: orange solid 1px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  place-content: center;
+  flex-direction: column;
+  padding-left: 1.5em;
+  width: fit-content;
+}
+
+#requestRecipePage li {
+  border: blue solid 1px;
+  list-style-image: url("/public/check.png");
+  margin-left: 0.5em;
+  max-width: fit-content;
+  margin-bottom: 5px;
+  vertical-align: middle;
+  /* padding-bottom: 20px; */
+  margin: 0;
+  padding: 0;
+}
