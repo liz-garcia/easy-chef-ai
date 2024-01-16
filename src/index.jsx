@@ -18,5 +18,5 @@ const renderApp = () => {
   );
 };
 
-window.addEventListener('load', renderApp);
-// window.onload = renderApp;
+// window.addEventListener('load', renderApp);
+window.onload = renderApp;
