@@ -60,8 +60,13 @@ main {
   /* border: 5px green solid; */
 }
 
+#welcome-text h1 {
+  margin-bottom: 0.1em;
+}
+
 label {
   min-width: 305px;
+  margin-bottom: 0.15em;
 }
 
 input {
