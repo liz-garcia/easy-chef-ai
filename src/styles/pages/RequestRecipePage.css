@@ -6,6 +6,7 @@
     width: 100%;
     height: 100%;
 } */
+
 body {
   /* border: blue solid 2px; */
   min-height: fit-content;
@@ -18,6 +19,7 @@ body {
 } */
 
 .requestRecipePageMain {
+  animation: fadeIn 1s ease-in-out;
   display: grid;
   place-items: center;
   /* border: solid red 2px; */
