@@ -17,13 +17,15 @@ const WelcomePage = () => {
 
   // Set 'userName' for UserContext.jsx
   // Set 'errorMessage' if 'name' input is not provided
-  const handleEnterClick = () => {
-    if (name === "") {
-      setErrorMessage("Please provide a name input.");
-    } else {
-      setErrorMessage("");
-      userContext.setUserName(name);
-      navigate("/create-recipe");
+  const handleEnterOrClick = (event) => {
+    if (event.key === 'Enter' || event.type === 'click') {
+      if (name === "") {
+        setErrorMessage("Please provide a name input.");
+      } else {
+        setErrorMessage("");
+        userContext.setUserName(name);
+        navigate("/create-recipe");
+      }
     }
   };
 
@@ -56,8 +58,9 @@ const WelcomePage = () => {
             value={name}
             onChange={handleNameChange}
             placeholder="Please enter your name"
+            onKeyDown={handleEnterOrClick}
           />
-          <button className="text-button" onClick={handleEnterClick}>
+          <button className="text-button" onClick={handleEnterOrClick}>
             Start
           </button>
         </div>

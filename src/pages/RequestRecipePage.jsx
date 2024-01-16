@@ -43,14 +43,18 @@ const RequestRecipePage = () => {
     setCategoryInput(event.target.value);
   };
 
-  const handleAddIngredient = () => {
+  const handleAddIngredient = (event) => {
+    if (event.key === 'Enter' || event.type === 'click') {
     setIngredients([...ingredients, ingredientInput]);
     setIngredientInput("");
+    }
   };
 
-  const handleAddCategory = () => {
+  const handleAddCategory = (event) => {
+    if (event.key === 'Enter' || event.type === 'click') {
     setCategories([...categories, categoryInput]);
     setCategoryInput("");
+    }
   };
 
   // Update ingredients and categories in RecipeContext
@@ -86,6 +90,7 @@ const RequestRecipePage = () => {
               value={ingredientInput}
               onChange={handleIngredientsChange}
               placeholder="Please add ingredients here."
+              onKeyDown={handleAddIngredient}
             />
             <button
               className="text-button"
@@ -117,6 +122,7 @@ const RequestRecipePage = () => {
               value={categoryInput}
               onChange={handleCategoriesChange}
               placeholder="Please add categories here."
+              onKeyDown={handleAddCategory}
             />
             <button
               className="text-button"
