@@ -29,7 +29,7 @@ const WelcomePage = () => {
   return (
     <>
       <div id="welcome-image">
-        <img alt="Welcoming AI Chef in the kitchen." src="/easyChefAI-icon.png"/>
+        <img alt="Welcoming AI Chef in the kitchen." src="/welcome-page-image.png"/>
       </div>
       <div id="welcome-text">
         <h1>Welcome{name && " " + name}!</h1>
