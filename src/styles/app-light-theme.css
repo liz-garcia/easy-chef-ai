@@ -1,3 +1,4 @@
+/* This className activates whenever darkMode is 'false' */
 .light-theme {
   transition: 1s ease;
   color: rgb(45, 45, 45);
@@ -5,6 +6,11 @@
 
   #toggleThemeButton {
     background: url("../assets/toggle-mode-button.png") no-repeat;
+    background-size: contain;
+  }
+
+  #toggleThemeButton:hover {
+    background: url("../assets/toggle-mode-button-blue.png") no-repeat;
     background-size: contain;
   }
 
@@ -27,7 +33,7 @@
 
   input::placeholder {
     color: #65a9f2;
-    opacity: 0.55;
+    opacity: 0.95;
   }
 
   .requestRecipePageMain h1 {

@@ -11,11 +11,6 @@ const AppRoutes = () => {
           <Route path="/" exact element={<WelcomePage />} />
           <Route path="/create-recipe" element={<RequestRecipePage />} />
           <Route path="/recipe" element={<RecipePage />} />
-          {/* 
-          <Route path="/:name" element={<UserProfile />} />
-          <Route path="/:name/my-recipes/" element={<MyRecipesPage />} />
-          <Route path="/:name/my-recipes/:category" element={<MyRecipesPage />} />
-          <Route path="/:name/my-recipes/favorites" element={<FavoriteRecipesPage />} /> */}
         </Routes>
       </Router>
     </>

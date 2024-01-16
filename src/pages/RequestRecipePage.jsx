@@ -27,10 +27,10 @@ const RequestRecipePage = () => {
       mainElement.className = "requestRecipePageMain";
     }
 
-    // Cleanup function (if needed)
+    // Cleanup function
     return () => {
       if (mainElement) {
-        mainElement.className = ""; // Remove the class on component unmount
+        mainElement.className = "";
       }
     };
   }, []);
@@ -44,16 +44,16 @@ const RequestRecipePage = () => {
   };
 
   const handleAddIngredient = (event) => {
-    if (event.key === 'Enter' || event.type === 'click') {
-    setIngredients([...ingredients, ingredientInput]);
-    setIngredientInput("");
+    if (event.key === "Enter" || event.type === "click") {
+      setIngredients([...ingredients, ingredientInput]);
+      setIngredientInput("");
     }
   };
 
   const handleAddCategory = (event) => {
-    if (event.key === 'Enter' || event.type === 'click') {
-    setCategories([...categories, categoryInput]);
-    setCategoryInput("");
+    if (event.key === "Enter" || event.type === "click") {
+      setCategories([...categories, categoryInput]);
+      setCategoryInput("");
     }
   };
 

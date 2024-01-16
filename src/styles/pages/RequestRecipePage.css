@@ -1,43 +1,20 @@
-/* main #requestRecipePage {
-    border: solid red 3px;
-    display: flex;
-    flex-direction: column;
-    place-items: center;
-    width: 100%;
-    height: 100%;
-} */
-
 body {
-  /* border: blue solid 2px; */
   min-height: fit-content;
 }
-
-/* main {
-    border: solid red 2px;
-    place-items: center;
-    flex-direction: column;
-} */
 
 .requestRecipePageMain {
   animation: fadeIn 1s ease-in-out;
   display: grid;
   place-items: center;
-  /* border: solid red 2px; */
   height: 100vh;
   min-height: fit-content;
 }
 
-/* Your div inside main */
-/* main div {
-  } */
-
 .requestRecipePageMain h1 {
-  /* border: blue solid 2px; */
   margin: 0px;
 }
 
 .requestRecipePageMain h2 {
-  /* border: green solid 2px; */
   margin: 0.5em;
   line-height: 1.15;
 }
@@ -51,16 +28,12 @@ body {
 }
 
 .recipeInput {
-  /* border: green solid 1px; */
-  /* width: 200px; */
-  /* margin-left: 50px; */
   padding-top: 0.5em;
   display: flex;
   place-content: center;
 }
 
 #requestRecipePage ul {
-  /* border: red solid 5px; */
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -72,13 +45,11 @@ body {
 }
 
 #requestRecipePage li {
-  /* border: blue solid 1px; */
   list-style-image: url("/public/check.png");
   margin-left: 0.5em;
   max-width: fit-content;
   margin-bottom: 5px;
   vertical-align: middle;
-  /* padding-bottom: 20px; */
   margin: 20px;
   padding: 0;
 }
@@ -86,18 +57,16 @@ body {
 @media (max-width: 655px) {
   #requestRecipePage ul {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Set the number of columns to 2 */
-    grid-gap: 16px; /* Adjust the gap between grid items */
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 16px;
   }
 
   #requestRecipePage li {
-    /* border: blue solid 1px; */
     list-style-image: url("/public/check.png");
     margin-left: 0.5em;
     max-width: fit-content;
     margin-bottom: 5px;
     vertical-align: middle;
-    /* padding-bottom: 20px; */
     margin: 10px;
     padding: 0;
     margin-left: 15px;

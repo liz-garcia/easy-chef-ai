@@ -5,7 +5,6 @@
   flex-direction: column;
   padding: 3em;
   place-items: center;
-  /* border: 5px green solid; */
 }
 
 #welcome-text h1 {
@@ -14,7 +13,6 @@
 }
 
 #welcome-text #logo {
-  /* border: 5px green solid; */
   animation: fadeIn 1.5s ease-in-out;
   flex: 2;
   margin: 1em;
@@ -24,8 +22,6 @@
 }
 
 #welcome-text #logo img {
-  /* border: 2px solid orange; */
-  /* animation: fadeIn 1.5s ease-in-out; */
   object-fit: contain;
   width: 100%;
   height: 100%;
@@ -33,11 +29,10 @@
 
 #welcome-text .error-message {
   font-size: 0.75em;
-  animation: fadeIn 1.5s ease-out; /* Adjust the duration and timing function as needed */
+  animation: fadeIn 1.5s ease-out;
 }
 
 #welcome-image {
-  /* border: 5px green solid; */
   animation: fadeIn 1.5s ease-in-out;
   flex: 2;
   display: flex;
@@ -46,16 +41,11 @@
 }
 
 #welcome-image img {
-  /* border: 2px solid orange; */
   object-fit: cover;
   place-items: center;
   width: 100%;
   height: 100%;
 }
-
-/* Media query for medium-sized screens */
-/* @media (max-width: 768px) {
-  } */
 
 /* Media query for small screens */
 @media (max-width: 655px) {
@@ -68,17 +58,14 @@
   }
 
   #welcome-image {
-    /* flex: 1; */
     width: 100%;
     height: 50vh;
   }
 
   #welcome-text {
-    /* border: blue solid 5px; */
     height: 50vh;
     padding-top: 0em;
     padding-bottom: 1.5em;
-    /* flex: 1; */
   }
 
   #welcome-text h1 {
@@ -86,17 +73,12 @@
   }
 
   #welcome-text #logo {
-    /* border: 5px green solid; */
-    /* flex: 2; */
     margin-top: 0.15em;
     margin-bottom: 0em;
-    /* width: 100%; */
     max-width: 300px;
-    /* height: 100%; */
   }
 
   #welcome-text #logo img {
-    /* border: 2px solid orange; */
     object-fit: contain;
     width: 100%;
     height: 100%;
@@ -104,13 +86,11 @@
 
   #welcome-text label {
     font-size: 0.95em;
-    /* margin: 0.15em; */
     margin-bottom: 0.25em;
   }
 
   #welcome-text .input-area {
     display: flex;
-    /* min-width: 325px; */
   }
 
   #welcome-text .input-area .text-button {
@@ -121,14 +101,4 @@
     max-width: 225px;
     margin: 0.25em;
   }
-
-  /* input {
-      margin: 0.5em;
-      padding: 0.5em;
-      font-size: 0.95em;
-      width: 15em;
-      text-align: center;
-      border-radius: 0.5em;
-      border: 1px lightgray solid;
-    } */
 }

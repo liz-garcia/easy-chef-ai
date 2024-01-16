@@ -2,7 +2,6 @@ import OpenAI from "openai";
 import generateRecipePrompt from "./generateRecipePrompt.js";
 
 // Access the OpenAI API key
-// const openAiApiKey = process.env.OPEN_AI_API_KEY;
 // eslint-disable-next-line no-undef
 const openAiApiKey = import.meta.env.VITE_OPEN_AI_API_KEY;
 

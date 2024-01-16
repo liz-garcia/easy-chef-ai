@@ -19,7 +19,7 @@ const ThemeContextProvider = ({ children }) => {
       setIsDarkMode(prefersDarkMode);
     };
 
-    // Call the function on component mount
+    // Call function on component mount
     updateTheme();
 
     // Listen for changes in system color scheme

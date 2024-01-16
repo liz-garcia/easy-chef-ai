@@ -25,11 +25,9 @@ const useOpenAIRecipe = (ingredients, categories, triggerOpenAI = true) => {
       const parsedHTML = parser.parseFromString(html, "text/html");
       const h1Element = parsedHTML.querySelector("h1");
       const recipeTitle = h1Element ? h1Element.textContent : "";
-      console.log(recipeTitle);
 
       // Generate image URL using the extracted recipe title
       const url = await generateRecipeImageURL(recipeTitle);
-      console.log("generated url:", url);
 
       // Update img element in recipe.html
       const imageElement = parsedHTML.querySelector("img");
@@ -48,9 +46,6 @@ const useOpenAIRecipe = (ingredients, categories, triggerOpenAI = true) => {
         title: recipeTitle,
         imageURL: url,
       }));
-
-      console.log("recipe.imageURL:", recipe.imageURL);
-      console.log("recipe.title:", recipe.title);
     } catch (error) {
       setError(error);
     } finally {

@@ -18,7 +18,7 @@ const WelcomePage = () => {
   // Set 'userName' for UserContext.jsx
   // Set 'errorMessage' if 'name' input is not provided
   const handleEnterOrClick = (event) => {
-    if (event.key === 'Enter' || event.type === 'click') {
+    if (event.key === "Enter" || event.type === "click") {
       if (name === "") {
         setErrorMessage("Please provide a name input.");
       } else {
@@ -31,11 +31,6 @@ const WelcomePage = () => {
 
   return (
     <>
-      {/* <div className="emojis">
-        <div id="eggs">
-            <img alt="Eggs emoji" src="/eggs.png"/>
-        </div>
-      </div> */}
       <div id="welcome-image">
         <img
           alt="Welcoming AI Chef in the kitchen."

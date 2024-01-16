@@ -18,5 +18,4 @@ const renderApp = () => {
   );
 };
 
-// window.addEventListener('load', renderApp);
 window.onload = renderApp;

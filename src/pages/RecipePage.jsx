@@ -21,26 +21,37 @@ const RecipePage = () => {
       mainElement.className = "recipePageMain";
     }
 
-    // Cleanup function (if needed)
+    // Cleanup function
     return () => {
       if (mainElement) {
-        mainElement.className = ""; // Remove the class on component unmount
+        mainElement.className = "";
       }
     };
   }, []);
 
   // Remove <html> and <body> tags
+  // from the html response provided by OpenAI
   const recipeHTML = recipe.html;
   const tempContainer = document.createElement("div");
   tempContainer.innerHTML = recipeHTML;
   const strippedHTMLRecipe = tempContainer.innerHTML;
 
   if (loading) {
-    return <p>Loading...</p>;
+    return (
+      <div id="loading-API-message" className="API-message">
+        <p>Creating a new recipe...</p>
+        <p>This might take a few seconds.</p>
+        <p>Thank you for waiting 👩‍🍳</p>
+      </div>
+    );
   }
 
   if (error) {
-    return <p>Error generating recipe: {error.message}</p>;
+    return (
+      <div id="error-API-message" className="API-message">
+        <p>Error generating recipe: {error.message}</p>
+      </div>
+    );
   }
 
   const handleEnterClick = () => {
@@ -51,7 +62,13 @@ const RecipePage = () => {
     <>
       {/* Render the HTML using ReactHtmlParser */}
       {HtmlReactParser(strippedHTMLRecipe)}
-      <button id="restartButton" className="text-button" onClick={handleEnterClick}>Restart!</button>
+      <button
+        id="restartButton"
+        className="text-button"
+        onClick={handleEnterClick}
+      >
+        Restart!
+      </button>
     </>
   );
 };
