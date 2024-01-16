@@ -53,6 +53,7 @@ main {
 
 #toggleThemeButton {
   position: fixed;
+  z-index: 10;
   top: 2em;
   right: 2em;
   width: 2em;

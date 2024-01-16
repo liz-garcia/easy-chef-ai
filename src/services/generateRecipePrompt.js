@@ -1,7 +1,7 @@
 // Returns an HTML response
 const generateRecipePrompt = (ingredients, categories) => {
   const recipePrompt = `
-    Please provide a 5-steps easy-to-follow recipe using these ingredients: ${ingredients} and categories: ${categories}.
+    Please provide a 5-steps recipe using these ingredients: ${ingredients} and categories: ${categories}.
     
     Finish the recipe with a kind, short and sweet message about:
     having a nice home-made meal or saying something like "Enjoy your meal!"

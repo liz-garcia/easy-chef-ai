@@ -69,7 +69,10 @@ const RequestRecipePage = () => {
             ? `Good to see you, ${userContext.userName}!`
             : "Good to see you!"}
         </h1>
-        <h2>I am your smart friend. Let&apos;s make a new recipe.</h2>
+        <h2>
+          Hello! 👋<br></br>I am your smart chef friend.<br></br>
+          Let&apos;s make a new recipe.
+        </h2>
 
         {/* Ingredients input and list */}
         <div id="ingredientsInputSection">
@@ -82,6 +85,7 @@ const RequestRecipePage = () => {
               id="ingredients"
               value={ingredientInput}
               onChange={handleIngredientsChange}
+              placeholder="Please add ingredients here."
             />
             <button
               className="text-button"
@@ -102,13 +106,17 @@ const RequestRecipePage = () => {
 
         {/* Categories input and list */}
         <div id="categoriesInputSection">
-          <label htmlFor="categories">What categories do you want?</label>
+          <label htmlFor="categories">
+            What categories do you want?<br></br>
+            Dessert, No-bake, Vegan... Your choice 😊
+          </label>
           <div>
             <input
               type="text"
               id="categories"
               value={categoryInput}
               onChange={handleCategoriesChange}
+              placeholder="Please add categories here."
             />
             <button
               className="text-button"
@@ -127,7 +135,9 @@ const RequestRecipePage = () => {
           </div>
         </div>
 
-        <button onClick={handleEnterClick}>Enter</button>
+        <button onClick={handleEnterClick} className="text-button">
+          Enter
+        </button>
       </div>
     </>
   );

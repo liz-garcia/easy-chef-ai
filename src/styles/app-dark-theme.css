@@ -23,11 +23,15 @@
 
   #welcome-text .input-area input {
     color: #4498f4;
-    background-color: #1d2a47;
+    /* background-color: #1d2a47; */
   }
 
   input::placeholder {
-    color: #4498f4;
+    color: #65a9f2;
     opacity: 0.65;
+  }
+
+  .requestRecipePageMain h1 {
+    color: #4498f4;
   }
 }

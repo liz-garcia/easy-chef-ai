@@ -26,6 +26,15 @@
   }
 
   input::placeholder {
+    color: #65a9f2;
+    opacity: 0.55;
+  }
+
+  .requestRecipePageMain h1 {
+    color: orange;
+  }
+
+  .requestRecipePageMain h2 {
     color: #4498f4;
   }
 }

@@ -46,7 +46,8 @@ const WelcomePage = () => {
         </div>
         <h1>Welcome{name && " " + name}!</h1>
         <label htmlFor="nameInput">
-          Need ideas for what to cook today?<br></br>Let your AI chef help you!
+          Need ideas for what to cook today?<br></br>🧑‍🍳 Let your AI chef help
+          you!
         </label>
         <div className="input-area">
           <input
