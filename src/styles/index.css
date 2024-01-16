@@ -87,6 +87,7 @@ main {
 
 #welcome-text #logo img {
   /* border: 2px solid orange; */
+  animation: fadeIn 1.5s ease-in-out;
   object-fit: contain;
   width: 100%;
   height: 100%;
@@ -125,11 +126,11 @@ input {
 
 #welcome-image {
   /* border: 5px green solid; */
+  animation: fadeIn 1.5s ease-in-out;
   flex: 2;
   display: flex;
   width: 100%;
   height: 100%;
-  /* animation: fadeIn 1.5s ease-in-out; */
 }
 
 #welcome-image img {
