@@ -33,12 +33,12 @@ const WelcomePage = () => {
       </div>
       <div id="welcome-text">
         <h1>Welcome{name && " " + name}!</h1>
-        <label htmlFor="nameInput">Need ideas for what to cook today? Let your AI chef help you!</label>
+        <label htmlFor="nameInput">Need ideas for what to cook today?<br></br>Let your AI chef help you!</label>
         <input
           type="text"
           id="nameInput"
           value={name}
-          onChange={handleNameChange} placeholder="Please enter your name:"
+          onChange={handleNameChange} placeholder="Please enter your name"
         />
         <button className="text-button" onClick={handleEnterClick}>Start</button>
         {/* Conditionally render error message */}

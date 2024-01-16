@@ -1,6 +1,6 @@
 .light-theme {
   transition: 1s ease;
-  color: darkgray;
+  color: rgb(45, 45, 45);
   background-color: rgb(255, 255, 255);
 
   #toggleThemeButton {
