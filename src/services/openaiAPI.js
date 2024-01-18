@@ -38,12 +38,20 @@ async function generateRecipeImageURL(recipeTitleString) {
   try {
     const prompt = `Forefront of delicious dish: ${recipeTitleString}, served on a table at home with pleasant lighting and pretty decoration.`;
 
-    const image = await openai.createImage({
+    // const image = await openai.createImage({
+    //   model: "dall-e-3",
+    //   prompt: `${prompt}`,
+    //   n: 1,
+    //   size: "750x750",
+    // });
+
+    const response = await openAi.createImage({
       model: "dall-e-3",
       prompt: `${prompt}`,
       n: 1,
-      size: "750x750",
+      size: "512x512",
     });
+    const image_url = response.data.data[0].url;
     
     // image_url = response.data.data[0].url;
 
@@ -53,9 +61,9 @@ async function generateRecipeImageURL(recipeTitleString) {
     //   size: "512x512",
     // });
 
-    const recipeImageURL = image.data[0].url;
+    // const recipeImageURL = image.data[0].url;
 
-    return recipeImageURL;
+    return image_url;
   } catch (error) {
     console.error("Error:", error);
   }
