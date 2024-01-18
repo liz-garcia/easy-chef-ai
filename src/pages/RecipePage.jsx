@@ -40,7 +40,7 @@ const RecipePage = () => {
     return (
       <div id="loading-API-message" className="API-message">
         <p>Creating a new recipe...</p>
-        <p>This might take a few seconds.</p>
+        <p>This might take a couple minutes.</p>
         <p>Thank you for waiting 👩‍🍳</p>
       </div>
     );
