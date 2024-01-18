@@ -38,13 +38,22 @@ async function generateRecipeImageURL(recipeTitleString) {
   try {
     const prompt = `Forefront of delicious dish: ${recipeTitleString}, served on a table at home with pleasant lighting and pretty decoration.`;
 
-    const image = await openAi.images.generate({
+    const image = await openai.createImage({
       model: "dall-e-3",
       prompt: `${prompt}`,
-      size: "512x512",
+      n: 1,
+      size: "750x750",
     });
+    
+    // image_url = response.data.data[0].url;
 
-    const recipeImageURL = image.data[0].url;
+    // const image = await openAi.images.generate({
+    //   model: "dall-e-3",
+    //   prompt: `${prompt}`,
+    //   size: "512x512",
+    // });
+
+    const recipeImageURL = image.data.data[0].url;
 
     return recipeImageURL;
   } catch (error) {
