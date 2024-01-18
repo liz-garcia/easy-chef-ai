@@ -41,7 +41,7 @@ async function generateRecipeImageURL(recipeTitleString) {
     const image = await openAi.images.generate({
       model: "dall-e-3",
       prompt: `${prompt}`,
-      size: "750x750",
+      size: "512x512",
     });
 
     const recipeImageURL = image.data[0].url;
