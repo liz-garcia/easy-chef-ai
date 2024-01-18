@@ -53,7 +53,7 @@ async function generateRecipeImageURL(recipeTitleString) {
     //   size: "512x512",
     // });
 
-    const recipeImageURL = image.data.data[0].url;
+    const recipeImageURL = image.data[0].url;
 
     return recipeImageURL;
   } catch (error) {
