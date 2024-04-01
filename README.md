@@ -1,5 +1,7 @@
 # EasyChefAI
 
+![EasyChefAI - mobile views](https://lh3.googleusercontent.com/d/1JSuNi4MIcaQBfJb_4Zl5ndGKfyQhxXh7)
+
 ## Description
 
 EasyChefAI is a React single-page application designed to assist users in deciding what to cook. Users can input their own ingredients and categories, and the application generates a recipe using the OpenAI API. The resulting recipe is presented in a user-friendly manner, accompanied by visually appealing images generated using OpenAI's ChatGPT and DALL-E 3.
@@ -20,6 +22,8 @@ EasyChefAI is a React single-page application designed to assist users in decidi
   - Incorporates soft animations for a more engaging user experience.
 
 ### Demo
+
+![EasyChefAI - desktop view](https://lh3.googleusercontent.com/d/1m89xO4ZpICfaoIhnGhapcziyjDkkD7Kp)
 
 Check out the deployed site: [EasyChefAI Demo](https://easy-chef-ai.netlify.app/)
 
