@@ -1,5 +1,7 @@
 # EasyChefAI
 
+### ✅ [Click here for the Demo version](https://easy-chef-ai.netlify.app/)
+
 ![EasyChefAI - mobile views](https://lh3.googleusercontent.com/d/1JSuNi4MIcaQBfJb_4Zl5ndGKfyQhxXh7)
 
 ## Description
@@ -21,13 +23,9 @@ EasyChefAI is a React single-page application designed to assist users in decidi
 - **Animations:**
   - Incorporates soft animations for a more engaging user experience.
 
-### Demo
+## Setup
 
 ![EasyChefAI - desktop view](https://lh3.googleusercontent.com/d/1m89xO4ZpICfaoIhnGhapcziyjDkkD7Kp)
-
-Check out the deployed site: [EasyChefAI Demo](https://easy-chef-ai.netlify.app/)
-
-## Setup
 
 To set up the project, follow these steps:
 
